@@ -67,4 +67,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+alias python=/usr/bin/python3
+alias pip="/usr/bin/python3 -m pip"
 
