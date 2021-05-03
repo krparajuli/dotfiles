@@ -9,5 +9,6 @@ alias gaac="git add * && git commit -m"
 alias gc="git commit -m"
 alias gca="git commit --amend"
 alias gl="git log"
+alias glagd="git log --all --graph --decorate"
+alias glagdo="git log --all --graph --decorate --online"
 alias grrh="git reset --hard HEAD"
-
