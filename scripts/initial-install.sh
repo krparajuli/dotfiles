@@ -7,6 +7,7 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 apt install python3-distutils python3-apt python3-testresources
 export PATH=$PATH:$HOME/.local/bin
 python3 get-pip.py
+apt install ubuntu-restricted-extras
 
 # Shell stuff
 apt install -y zsh tmux
