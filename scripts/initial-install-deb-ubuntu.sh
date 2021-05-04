@@ -38,4 +38,15 @@ mkdir ~/.Applications
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.Applications/powerlevel10k
 echo 'source ~/.Applications/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 
-
+# Disable CapsLock and set it to ESC and long press to Ctrl
+# Set Shift-CapsLock to CapsLock
+apt install xcape
+echo '''#!/bin/sh
+# Set long press Caps Lock to Ctrl
+/usr/bin/setxkbmap -option ctrl:nocaps
+# Set CapsLock short press to ESC
+/usr/bin/xcape -e 'Control_L=Escape'
+# Set Shift-CapsLock to CapsLock
+''' | sudo tee /tmp/capsLockCustomize.sh
+cp /tmp/capsLockCustomize.sh /etc/init.d/capsLockCustomize.sh
+chmod +x /etc/init.d/capsLockCustomize.sh
