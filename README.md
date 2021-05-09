@@ -1,1 +1,5 @@
-helpers : scripts to make dotfiles be created better
+- DIRED: all configs in different folders 
+   - helpers: scripts to make dotfiles be created better
+   - alias:
+   - vars: 
+   - scripts:
