@@ -25,6 +25,15 @@ gem install bropages
 # Install find and locate
 apt install -y findutils mlocate
 
+# Shell customizations with oh-my-zsh and other plugins
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+source ~/.zshrc
+# Get powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+sed -i 's/ZSH_THEME.*/ZSH_THEME=\"powerlevel10k\/powerlevel10k\"/g' ~/.zshrc
+
+
 # Install powerlevel10k terminal customizations
 mkdir $HOME/.local/share/fonts
 cd $HOME/.local/share/fonts
