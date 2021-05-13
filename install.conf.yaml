@@ -6,7 +6,9 @@
 - clean: ['~']
 
 - link:
-    ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
-    ~/.p10k.zsh: p10k.zsh 
-    ~/.gitconfig: gitconfig
+    ~/.vimrc: dots/vim/vimrc
+    ~/.zshrc: dots/shells/zshrc
+    ~/.p10k.zsh: dots/shells/p10k.zsh 
+    ~/.gitconfig: dots/git/gitconfig
+
+# TODO: alias . and .. into zshrc

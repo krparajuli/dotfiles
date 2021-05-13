@@ -51,4 +51,6 @@ echo 'source ~/.Applications/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 # Disable CapsLock and set it to ESC and long press to Ctrl
 apt install xcape   # check ~/.config/autostart for configs
 
+# Network tools
+apt install net-tools
 
