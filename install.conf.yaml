@@ -9,6 +9,9 @@
     ~/.vimrc: dots/vim/vimrc
     ~/.zshrc: dots/shells/zshrc
     ~/.p10k.zsh: dots/shells/p10k.zsh 
+    ~/.bash_logout: dots/shells/bash_logout
+    ~/.bashrc: dots/shells/bashrc
     ~/.gitconfig: dots/git/gitconfig
+
 
 # TODO: alias . and .. into zshrc
