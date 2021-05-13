@@ -16,6 +16,6 @@
     ~/.tmux.conf: dots/tmux/tmux.conf
     
     ~/.gitconfig: dots/git/gitconfig
-
+    ~/.gitignore_global: dots/git/gitignore_global
 
 # TODO: alias . and .. into zshrc
