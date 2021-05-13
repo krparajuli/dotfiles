@@ -12,6 +12,7 @@
     ~/.p10k.zsh: dots/shells/p10k.zsh 
     ~/.bash_logout: dots/shells/bash_logout
     ~/.bashrc: dots/shells/bashrc
+    ~/.inputrc: dots/shells/inputrc
   
     ~/.tmux.conf: dots/tmux/tmux.conf
     
