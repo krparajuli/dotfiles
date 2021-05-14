@@ -14,6 +14,7 @@
     ~/.bashrc: dots/shells/bashrc
     ~/.inputrc: dots/shells/inputrc
     ~/.customrc: dots/shells/customrc
+    ~/.aliases: dots/shells/aliases
   
     ~/.tmux.conf: dots/tmux/tmux.conf
     
