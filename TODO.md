@@ -1,7 +1,11 @@
-# shell
+### shell
 - Install git plugin and add configurations in zsh
 
-# vim
+### vim
 
 
-# nvim
+### nvim
+
+
+### tmux
+-
