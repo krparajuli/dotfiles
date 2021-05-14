@@ -1,0 +1,8 @@
+# Added custom applications folder
+[[ ! -d "$HOME/.Appplications" ]] && mkdir -p $HOME/.Applications
+[[ ! -v CUSTOM_APP ]] && [[ -d "$HOME/.Applications" ]] && export CUSTOM_APP=$HOME/.Applications
+
+# Add conda binaries if it is installed
+# [ $? ] && cd $CUSTOM_APP && [[ $(ls | grep conda) ]] && for x in $(ls | grep conda); do export PATH="$CUSTOM_APP/$x/bin:$CUSTOM_APP/$x/condabin:$PATH"; done
+# [ $? ] && echo "Conda binary environment set up successfully"
+
