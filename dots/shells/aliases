@@ -27,6 +27,15 @@ alias cdgr='cd "$(git root)"'
 # Composite Custom Commands
 ####################################################
 
+
+######## Caps Lock Settings Start ##################
+# capesc() {
+  #  [ command -v xcape ] && xcape -e 'Caps_Lock
+#
+
+####################################################
+
+
 # Create a directory and cd into it
 mcd() {
     mkdir "${1}" && cd "${1}"
