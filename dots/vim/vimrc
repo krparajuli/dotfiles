@@ -1,4 +1,4 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible " VI compatible mode is disabled so that VIm things work
 set belloff=all  " Remove annoying bell sounds
 
@@ -21,7 +21,6 @@ Plug 'scrooloose/nerdtree'            " File explorer
 " NERDtree Navigation ============================================
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs' " fzf is a better alternative
-
 " Automcomplete and Folding and Formatting =======================
 Plug 'Valloric/YouCompleteMe'         " Auto-Complete
 Plug 'tmhedberg/SimpylFold'	      " Folding
@@ -93,5 +92,5 @@ set splitright
 
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
-nnoremap <C-H> <C-L><C-H>
+nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
