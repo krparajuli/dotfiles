@@ -1,6 +1,7 @@
 # configuration files
 .DS_Store
 Desktop.ini
+.idea
 
 # Thumbnail cache files
 ._*
