@@ -56,3 +56,8 @@ apt install xcape   # check ~/.config/autostart for configs
 # Network tools
 apt install net-tools
 
+# Neovim as default
+apt install neovim
+cp /usr/bin/vim /usr/bin/ovim
+rm /usr/bin/vim
+ln -s /usr/bin/nvim /usr/bin/vim
