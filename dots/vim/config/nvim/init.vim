@@ -2,8 +2,8 @@
 syntax on
 filetype plugin indent on
 
-" let g:python3_host_prog = '~/.neovim/py3/bin/python'
-" let g:node_host_prog = '~/.neovim/node/bin/neovim-node-host'
+let g:python3_host_prog = expand('~/.Applications/miniconda3/envs/neovim/bin/python3')
+let g:node_host_prog = '~/.neovim/node/bin/neovim-node-host'
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
@@ -16,7 +16,7 @@ source ~/.vimrc
 " FZF Floating Window (NVIM only)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Let the input go up and the search list go down
-" let $FZF_DEFAULT_OPTS = '--layout=reverse'
+let $FZF_DEFAULT_OPTS = '--layout=reverse'
 
 "Open FZF and choose floating window
 " let g:fzf_layout = { 'window': 'call OpenFloatingWin()' }
