@@ -32,7 +32,7 @@ Plug 'romainl/vim-cool'               " Disables highlight when search is done
 Plug 'haya14busa/incsearch.vim'       " Better incremental search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }  " FZF plugin, makes Ctrl-P unnecessary
 Plug 'junegunn/fzf.vim'
-" Plug 'kien/ctrlp.vim'		      " Start searching with Ctrl-P
+Plug 'kien/ctrlp.vim'		      " SUPER SEARCH Start searching with Ctrl-P
 
 " Git =============================================================
 Plug 'tpope/vim-fugitive'            " See it onaction on VIMcasts
@@ -40,6 +40,19 @@ Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'} " Display git and
 
 " Hosts ===========================================================
 Plug 'neovim/node-host', { 'do': 'npm install -g neovim' }
+
+" Syntax ==========================================================
+Plug 'vim-syntastic/syntastic'
+
+" Python PEP 8 ====================================================
+Plug 'nvie/vim-flake8'
+
+" Vim-Conda =======================================================
+Plug 'cjrh/vim-conda'
+
+" ============ THEMES =========================
+"Plug 'jnurmine/Zenburn'
+"Plug 'altercation/vim-colors-solarized'
 
 " Initialize plugin system
 call plug#end()
@@ -96,3 +109,21 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
+
+
+"========== Make python code pretty ====================
+let python_highlight_all=1
+syntax on
+
+"""
+"if has('gui_running')
+"  set background=dark
+"  colorscheme solarized
+"else
+"  colorscheme zenburn
+"endif
+"""
+
+"call togglebg#map("<F5>")
+
+
