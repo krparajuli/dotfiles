@@ -39,7 +39,7 @@ Plug 'tpope/vim-fugitive'            " See it onaction on VIMcasts
 Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'} " Display git and others
 
 " Hosts ===========================================================
-Plug 'neovim/node-host', { 'do': 'npm install -g neovim' }
+"Plug 'neovim/node-host', { 'do': 'npm install -g neovim' }
 
 " Syntax ==========================================================
 Plug 'vim-syntastic/syntastic'
