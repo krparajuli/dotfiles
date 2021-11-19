@@ -112,14 +112,14 @@ unsetopt BEEP # remove BEEPS
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('$HOME/.Applications/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/kal/MyApplications/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "$HOME/.Applications/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "$HOME/.Applications/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/kal/MyApplications/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/kal/MyApplications/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="$HOME/.Applications/miniconda3/bin:$PATH"
+        export PATH="/Users/kal/MyApplications/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -132,4 +132,8 @@ export NVM_DIR="$HOME/.nvm"
 
 source ~/.customrc
 source ~/.aliases
+
+#export pihome=pi@192.168.86.200 -p 65022
+#export piaway=pi@74.111.100.35 -p 54022
+#export ubhome=kal@192.168.86.201 -p 22
 
