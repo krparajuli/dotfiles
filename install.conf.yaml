@@ -6,7 +6,7 @@
 - clean: ['~']
 
 - link:
-    ~/.vimrc: dots/vim/vimrc
+#   ~/.vimrc: dots/vim/vimrc
     ~/.config/nvim: dots/vim/config/nvim
 
     ~/.zshrc: dots/shells/zshrc

@@ -22,7 +22,6 @@ Plug 'scrooloose/nerdtree'            " File explorer
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs' " fzf is a better alternative
 " Automcomplete and Folding and Formatting =======================
-Plug 'Valloric/YouCompleteMe'         " Auto-Complete
 Plug 'tmhedberg/SimpylFold'	      " Folding
 Plug 'vim-scripts/indentpython.vim'   " Python Indenting 
 
@@ -48,7 +47,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 
 " Vim-Conda =======================================================
-Plug 'cjrh/vim-conda'
+" Plug 'cjrh/vim-conda'
 
 " ============ THEMES =========================
 "Plug 'jnurmine/Zenburn'
