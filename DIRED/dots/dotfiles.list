@@ -1,0 +1,4 @@
+.bashrc, shells
+.zshrc, shells
+.vimrc, editors
+.p10k.zsh, shells
