@@ -5,6 +5,7 @@
 	name = Kalyan Parajuli
 [push]
 	autoSetupRmote = true
+	autoSetupRemote = true
 [advice]
 	addIgnoredFile = false
 [filter "lfs"]
