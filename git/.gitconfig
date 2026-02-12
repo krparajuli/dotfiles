@@ -1,0 +1,14 @@
+[init]
+	defaultBranch = main
+[user]
+	email = 5432978+krparajuli@users.noreply.github.com
+	name = Kalyan Parajuli
+[push]
+	autoSetupRmote = true
+[advice]
+	addIgnoredFile = false
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
