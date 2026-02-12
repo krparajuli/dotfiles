@@ -1,3 +1,15 @@
+# Use .zprofile for:
+# PATH modifications
+# Environment variables (JAVA_HOME, etc.)
+# One-time startup programs
+#
+# Use .zshrc for: Aliases (alias ll='ls -la')
+# Shell functions
+# Prompt configuration (PS1)
+# Shell options (setopt commands)
+# Key bindings
+# Auto-completions
+
 HISTFILE=~/.zsh_history    # Where to save history
 HISTSIZE=20000             # Lines to keep in memory
 SAVEHIST=200000             # Lines to save to file
