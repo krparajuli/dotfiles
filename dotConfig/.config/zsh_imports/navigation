@@ -3,3 +3,5 @@ eval "$(zoxide init zsh)"
 cd () {
   /usr/bin/cd $1 && z $1
 }
+
+
