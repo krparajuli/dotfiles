@@ -37,3 +37,9 @@ source <(kubectl completion zsh)
 alias k=kubectl
 complete -o default -F __start_kubectl k
 
+# IMPORTS
+IMPORTS_DIR="$HOME/.config/zsh_imports"
+[ -d $IMPORTS_DIR ] && for file in $IMPORTS_DIR/*; do
+  source "$file"
+done
+
