@@ -23,3 +23,15 @@ export PATH=$PATH:$GOROOT/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# IMPORTS
+IMPORTS_DIR="$HOME/.config/zsh_imports"
+
+# KUBECONFIGS
+for i in "$HOME"/.kube/*; do
+  case "$(basename "$i")" in
+    cache|cache.yaml) continue ;;   # files to exclude
+  esac
+  export KUBECONFIG="$i:$KUBECONFIG"
+done
+
