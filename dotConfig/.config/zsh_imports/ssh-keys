@@ -1,0 +1,24 @@
+PRIVATE_KEY="$HOME/.ssh/id_ed25519"
+PASSPHRASE_FILE="$HOME/.ssh/passphrase"
+
+# Validate files exist
+[ -f "$PRIVATE_KEY" ] || { echo "Key not found"; sleep 2; exit 1; }
+[ -f "$PASSPHRASE_FILE" ] || { echo "Passphrase file not found"; sleep 2; exit 1; }
+
+# Ensure ssh-agent is running
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+  eval "$(ssh-agent -s)"
+fi
+
+# Add key with passphrase from file
+# Works on FreeBSD ssh client only
+# ssh-add --password-fd=0 "$PRIVATE_KEY" < "$PASSPHRASE_FILE"
+
+# Works for MacOS
+# Add key using expect
+expect << 'EOF' > /dev/null 2>&1
+spawn ssh-add "$PRIVATE_KEY"
+expect "Enter passphrase"
+send "$(cat $PASSPHRASE_FILE)\r"
+expect eof
+EOF
