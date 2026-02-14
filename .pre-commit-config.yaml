@@ -1,0 +1,13 @@
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.0
+    hooks:
+      - id: gitleaks
+#
+#repos:
+#  - repo: https://github.com/Yelp/detect-secrets
+#    rev: v1.4.0  # Check for latest version
+#    hooks:
+#      - id: detect-secrets
+#        args: ['--baseline', '.secrets.baseline']
+#        exclude: package-lock.json
