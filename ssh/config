@@ -16,5 +16,5 @@ Host *
   PreferredAuthentications publickey,password
   IdentityFile ~/.ssh/id_ed25519
   User root
-
+  SetEnv TERM=xterm-256color # Fixes terminal problem with ghostty
 
