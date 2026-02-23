@@ -45,6 +45,8 @@ source <(kubectl completion zsh)
 alias k=kubectl
 complete -o default -F __start_kubectl k
 # Kubeconfig files
+# HELM
+source <(helm completion zsh)
 
 ####### ANTIDOTE ##########################
 # Lazy-load antidote and generate the static load file only when needed
@@ -57,3 +59,6 @@ if [[ ! ${zsh_plugins}.zsh -nt ${zsh_plugins}.txt ]]; then
 fi
 source ${zsh_plugins}.zsh
 
+
+## BITWARDEN SSH CLIENT #################
+export SSH_AUTH_SOCK=$HOME/.bitwarden-ssh-agent.sock

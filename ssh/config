@@ -1,11 +1,20 @@
-Host *
-  PreferredAuthentications publickey
-  IdentityFile ~/.ssh/id_ed25519
-  User root
+Host evo
+  Hostname evo.local
+  User hal
 
+# All Local Kubernetes devices
+Host prox
+  Hostname 192.168.100.2
 Host proxdoc
   Hostname 192.168.100.4
 Host k3s1
   Hostname 192.168.100.5
 Host k3s2
   Hostname 192.168.100.6
+
+Host *
+  PreferredAuthentications publickey,password
+  IdentityFile ~/.ssh/id_ed25519
+  User root
+
+
