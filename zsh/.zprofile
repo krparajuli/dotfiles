@@ -16,7 +16,8 @@
 # Golang
 export GOPATH="${HOME}/.go"
 export GOROOT="$(brew --prefix golang)/libexec"
-export PATH=$PATH:$GOPATH/bin
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
 export PATH=$PATH:$GOROOT/bin
 
 # NVM

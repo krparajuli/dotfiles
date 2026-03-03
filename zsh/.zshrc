@@ -58,7 +58,8 @@ if [[ ! ${zsh_plugins}.zsh -nt ${zsh_plugins}.txt ]]; then
   )
 fi
 source ${zsh_plugins}.zsh
-
-
 ## BITWARDEN SSH CLIENT #################
 export SSH_AUTH_SOCK=$HOME/.bitwarden-ssh-agent.sock
+
+# opencode
+export PATH=/Users/kal/.opencode/bin:$PATH
